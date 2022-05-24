@@ -76,14 +76,14 @@
       </div>
     </section>
     <section class="u-clearfix u-palette-4-light-2 u-section-2" id="sec-7613">
-      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+      <div class="u-clearfix u-sheet u-sheet-1">
         <h3 class="u-text u-text-1">Trasformazioni affini</h3>
-        <p class="u-align-left u-text u-text-2"> Una trasformazione lineare è una applicazione tra spazi vettoriali che preserva le
-combinazioni lineari (operazioni di
-somma e di moltiplicazione per scalare). Una trasformazione affine è una
-trasformazione esprimibile come somma di una trasformazione lineare seguita
-da una traslazione.<br>Esempi di trasformazioni affini sono: traslazioni, rotazioni, riflessioni, shear.<br>
-Si definisce trasformazione affine in uno spazio euclideo E3 una funzione:<br>
+        <p class="u-align-left u-text u-text-2"> Una trasformazione lineare è una
+applicazione tra spazi vettoriali ​che conserva le operazioni di somma tra vettori e di moltiplicazione per uno scalare.&nbsp;Una trasformazione affine è una
+trasformazione esprimibile come somma
+di una trasformazione lineare seguita
+da una traslazione.<br>Esempi di trasformazioni affini sono: traslazioni, rotazioni,
+riflessioni, shear.<br> Si definisce trasformazione affine in uno spazio euclideo E3&nbsp;una funzione:<br>
         </p>
         <p class="u-align-center u-text u-text-3"><i>φ: E3&nbsp;-&gt; E3</i>
           <br><i>[x y z] -&gt; M[x y z] + t</i>
@@ -98,10 +98,13 @@ Si definisce trasformazione affine in uno spazio euclideo E3 una funzione:<br>
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
         <h3 class="u-text u-text-1">Isometrie</h3>
         <p class="u-text u-text-2"> Un'isometria
-è una qualsiasi trasformazione geometrica&nbsp;che conserva le distanze: per
+è una qualsiasi trasformazione geometrica f che conserva le distanze: per
 qualunque coppia di punti distinti A e B del piano o dello spazio vale la
-relazione: <br> d(A,&nbsp;B) =&nbsp;d(f(A),&nbsp;f(B)) <br> Le isometrie possono essere&nbsp;dirette&nbsp;quando conservano il verso di
-rotazione, o&nbsp;inverse&nbsp;quando modificano il verso con il suo opposto. <br> Tra le isometrie possiamo annoverare traslazioni,rotazioni e riflessioni (o simmetrie). 
+relazione: <br>
+        </p>
+        <p class="u-align-center u-text u-text-3"> d(A,&nbsp;B) =&nbsp;d(f(A),&nbsp;f(B)) </p>
+        <p class="u-text u-text-4"> Le isometrie possono essere&nbsp;dirette&nbsp;quando conservano l'orientamento dello spazio, o&nbsp;inverse&nbsp;quando lo modificano. <br>
+          <br>Tra le isometrie possiamo riconoscere traslazioni, rotazioni e riflessioni (o simmetrie). Le isometrie che verranno illustrate nelle sezioni seguenti sono quelle che sono state rilevanti ai fini del progetto, ovvero traslazioni e rotazioni. 
         </p>
       </div>
     </section>
@@ -109,16 +112,18 @@ rotazione, o&nbsp;inverse&nbsp;quando modificano il verso con il suo opposto. <b
       <div class="u-clearfix u-sheet u-sheet-1">
         <h3 class="u-text u-text-1">Traslazioni</h3>
         <p class="u-text u-text-2"> Sia dato un vettore v dello spazio. 
-Si chiama traslazione di vettore v (che si indica con il simbolo tv) la corrispondenza dallo spazio in sé che ad ogni punto P associa il punto 
-tv(P) = P' tale che il segmento PP' è equipollente a v.<br>
-          <br>
-          <br> Proprietà delle&nbsp;traslazioni:<br> • Ogni traslazione di vettore&nbsp;v&nbsp;è un'isometria non invertente, che non
+Si chiama traslazione di vettore v (che si indica con il simbolo 
+tv) la corrispondenza dallo spazio in sé che ad ogni punto P associa il punto 
+tv
+(P) = P'&nbsp;tale che il segmento PP' è
+equipollente a&nbsp;v.<br>
+          <br> Proprietà delle&nbsp;traslazioni:<br> • Ogni traslazione di vettore&nbsp;v&nbsp;è un'isometria diretta, che non
 ha punti uniti e in cui le uniche rette unite sono lette parallele al
-vettore&nbsp;v.<br> • Se&nbsp;v&nbsp;è il vettore nullo, una traslazione di vettore&nbsp;v&nbsp;corrisponde
-ad un'identità.<br> • La composizione di due traslazioni è ancora una traslazione; se T1&nbsp;è una
+vettore&nbsp;v;<br> • Se&nbsp;v&nbsp;è il vettore nullo, una traslazione di vettore&nbsp;v&nbsp;corrisponde
+ad un'identità;<br> • La composizione di due traslazioni è ancora una traslazione; se T1&nbsp;è una
 traslazione di vettore&nbsp;u&nbsp;e T2&nbsp;una traslazione di vettore&nbsp;v,
 allora la traslazione composta T1&nbsp;o T2&nbsp;è definita dal vettore
-somma&nbsp;u + v.&nbsp;&nbsp;
+somma&nbsp;u + v.
         </p>
         <img class="u-align-center u-image u-image-default u-image-1" src="images/traslazione-di-un-poligono.png" alt="" data-image-width="555" data-image-height="347">
       </div>
@@ -126,57 +131,47 @@ somma&nbsp;u + v.&nbsp;&nbsp;
     <section class="u-clearfix u-palette-4-light-2 u-section-5" id="sec-bc7c">
       <div class="u-clearfix u-sheet u-sheet-1">
         <h3 class="u-text u-text-1">Rotazioni</h3>
-        <p class="u-text u-text-2"> Sia dato un punto O del piano ed un angolo orientato di
-ampiezza a. Si
-chiama rotazione di centro O ed ampiezza a
-(indicata con r(O,a) ) la
-corrispondenza dal piano in sé che al punto O associa il punto O stesso e ad
-ogni punto P del piano, distinto da O, associa il punto P' tale che l'angolo POP’
-abbia ampiezza a ed i
-segmenti OP ed OP' siano congruenti.<br>
-          <br>Una rotazione di ampiezza positiva si chiama anche positiva
-(od antioraria); una rotazione di ampiezza negativa si chiama anche negativa
-(od oraria). La rotazione è una corrispondenza biunivoca dal piano in sé. Nel
-caso particolare in cui l'ampiezza a
-della rotazione ​r(O,a) è
-180°, allora la rotazione è la simmetria centrale avente il centro nel punto O. Se, invece, l'ampiezza a
-della rotazione ​r(O,a) è 0°
-oppure 360°, allora la rotazione è l'identità.<br>
-          <br>Nel caso in cui la rotazione deve avvenire attorno ad una
-retta r che non passa per l'origine, si procede nel modo seguente:<br>• Si applica una traslazione sulla retta r in modo da
+        <p class="u-text u-text-2">NEL PIANO: La rotazione nel piano è definita da un punto O detto centro di rotazione e da un angolo ​orientato di ampiezza α. Si dice rotazione di centro O e ampiezza&nbsp;α la corrispondenza del paino in sé che ad ogni punto P del piano associa il punto P' tale che i segmenti OP e OP' abbiano la stessa lunghezza e l'angolo POP' abbia la stessa ampiezza e orientamento di&nbsp;α.<br>
+          <br>NELLO SPAZIO: La rotazione nello spazio è definita da una retta r passante per l'origine, che prende il nome di asse di rotazione, e da un angolo orientato di ampiezza&nbsp;α. La rotazione di retta r e angolo&nbsp;α associa ad un qualunque punto P dello spazio il punto P' tale che:<br>• P' appartenga al piano ω&nbsp;perpendicolare alla retta r passante per il punto P;<br>• i segmenti OP e OP', dove O è il punto di intersezione tra la retta r e il piano ω, abbiano la stessa lunghezza;<br> • l'angolo POP' abbia la stessa ampiezza e orientamento di&nbsp;α.<br>
+          <br>Nel caso in cui la rotazione avvenga attorno ad una
+retta r che non passa per l'origine e di orientazione qualsiasi, si procede nel modo seguente:<br>• Si applica una traslazione sulla retta r in modo da
 generare una retta r' che passi per l'origine;<br>• Si applica una rotazione alla retta r' in modo tale che
-l'orientazione della retta sia concorde con l'asse Y.<br>
-          <br>Proprietà delle rotazioni nello spazio:<br>• Una rotazione è un'isometria non invertente;<br>• Nella rotazione nello spazio, l'asse di rotazione è una
+l'orientazione della retta sia concorde con l'asse Y;<br>• Si applica una rotazione attorno ad&nbsp;<i>r'</i>&nbsp;utilizzando la matrice di Y;<br>• Si applica una rotazione per portare&nbsp;<i>r'</i>&nbsp;nella sua orientazione originale;<br>• Si applica una traslazione per riportare&nbsp;<i>r'</i>&nbsp;in&nbsp;<i>r</i>.<br>
+          <br>Proprietà delle rotazioni nello spazio:<br>• Una rotazione è un'isometria diretta;<br>• L'asse di rotazione è una
 retta unita e tutti i punti che giacciono sull'asse di rotazione sono punti
-uniti;<br>• Nello spazio, una rotazione di 180° attorno a una retta r
+uniti;<br>• Una rotazione di 180° attorno a una retta r
 corrisponde a una simmetria assiale avente come asse di simmetria la retta r;<br>• La composizione di due rotazioni aventi stesso asse di
-rotazione è ancora una rotazione.
+rotazione è ancora una rotazione.<br>
         </p>
         <img class="u-align-center u-image u-image-default u-image-1" src="images/rotazione-nello-spazio.png" alt="" data-image-width="610" data-image-height="440">
       </div>
     </section>
-    <section class="u-clearfix u-palette-4-light-2 u-section-6" id="sec-2f63">
+    <section class="u-clearfix u-palette-4-light-2 u-section-6" id="sec-e309">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <h3 class="u-text u-text-1">Altre trasformazioni affini</h3>
+        <p class="u-text u-text-2">Altri tipi di trasformazione affine utilizzati nella costruzione del progetto, sebbene non direttamente visibili durante il gioco come le traslazioni e le rotazioni, sono omotetie e similitudini.</p>
+      </div>
+    </section>
+    <section class="u-clearfix u-palette-4-light-2 u-section-7" id="sec-2f63">
       <div class="u-clearfix u-sheet u-sheet-1">
         <h3 class="u-text u-text-1">Omotetie</h3>
-        <p class="u-text u-text-2"> Siano fissati un punto O del piano ed un numero reale k. Si
+        <p class="u-text u-text-2"> Siano fissati un punto O dello spazio ed un numero reale k diverso da 0. Si
 chiama omotetia di centro O e rapporto k ( che si indica con il simbolo s(O,k) ) la corrispondenza
 dal piano in sé, che ad ogni punto P del piano fa corrispondere il punto P' in
 modo tale che il punto P dello spazio viene spostato sulla semiretta uscente da
 O e passante per P’, in modo che la sua distanza da O cambi secondo un fattore
-costante k positivo. Il centro O dell'omotetia è un punto unito di questa
+costante k di valore assoluto positivo. Il centro O dell'omotetia è un punto unito di questa
 corrispondenza.<br>Si noti che, se k &gt;1
 , allora l'omotetia "ingrandisce" le figure (dilatazione). Se,
 invece, k &lt;1,
 allora l'omotetia "rende più piccole" le figure (contrazione). Per k
 = -1 l'omotetia è una simmetria centrale di centro O. Invece, se k = 1, i punti
-P e P' coincidono, dunque l'omotetia è la trasformazione identica. Se k = 0,
-allora l'omotetia è una trasformazione costante; infatti ad ogni punto P del
-piano essa fa corrispondere il punto O.&nbsp;&nbsp;
+P e P' coincidono, dunque l'omotetia è la trasformazione identica.
         </p>
         <img class="u-align-center u-image u-image-default u-image-1" src="images/esempio-di-omotetia-diretta.png" alt="" data-image-width="514" data-image-height="398">
       </div>
     </section>
-    <section class="u-clearfix u-palette-4-light-2 u-section-7" id="sec-ecfc">
+    <section class="u-clearfix u-palette-4-light-2 u-section-8" id="sec-ecfc">
       <div class="u-clearfix u-sheet u-sheet-1">
         <h3 class="u-text u-text-1">Similitudini</h3>
         <p class="u-text u-text-2">Si chiama similitudine una corrispondenza biunivoca dal piano in sé tale che, 
@@ -194,12 +189,12 @@ simili.
         <img class="u-align-center u-image u-image-default u-image-1" src="images/similitudine-diretta.png" alt="" data-image-width="343" data-image-height="188">
       </div>
     </section>
-    <section class="u-align-center u-clearfix u-gradient u-section-8" id="carousel_5f4b">
+    <section class="u-align-center u-clearfix u-gradient u-section-9" id="carousel_5f4b">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
         <h1 class="u-text u-text-default u-title u-text-1">IMPLEMENTAZIONE</h1>
       </div>
     </section>
-    <section class="u-clearfix u-palette-1-light-2 u-section-9" id="carousel_c528">
+    <section class="u-clearfix u-palette-1-light-2 u-section-10" id="carousel_c528">
       <div class="u-clearfix u-sheet u-sheet-1">
         <h3 class="u-text u-text-1">Rotazione del giocatore e della telecamera</h3>
         <p class="u-text u-text-2">Durante il gioco, il giocatore può premere i tasti Q ed E per muovere il suo personaggio e la telecamera che lo osserva di 90° rispettivamente verso sinistra o verso destra.<br>
@@ -210,7 +205,7 @@ simili.
         <img class="u-align-center u-image u-image-default u-preserve-proportions u-image-2" src="images/code_3.png" alt="" data-image-width="622" data-image-height="127">
       </div>
     </section>
-    <section class="u-clearfix u-palette-1-light-2 u-section-10" id="carousel_cfb7">
+    <section class="u-clearfix u-palette-1-light-2 u-section-11" id="carousel_cfb7">
       <div class="u-clearfix u-sheet u-sheet-1">
         <h3 class="u-text u-text-1">Traslazione delle piattaforme mobili</h3>
         <p class="u-text u-text-2">P​er realizzare le piattaforme mobili che si muovono ad intervalli regolari, sono state fornite due posizioni nello spazio, che vengono salvate nel codice rispettivamente come pos1 e pos2 e fisse durante il livello. Un altro parametro movingTime è la lunghezza temporale della traslazione, in secondi.<br>Nel momento in cui inizia il livello, la posizione di ciascuna piattaforma mobile viene fatta corrispondere a pos1.<br>
@@ -219,7 +214,7 @@ simili.
         <img class="u-align-center u-image u-image-default u-preserve-proportions u-image-1" src="images/code_2.png" alt="" data-image-width="1020" data-image-height="747">
       </div>
     </section>
-    <section class="u-clearfix u-palette-1-light-2 u-section-11" id="carousel_078f">
+    <section class="u-clearfix u-palette-1-light-2 u-section-12" id="carousel_078f">
       <div class="u-clearfix u-sheet u-sheet-1">
         <h3 class="u-text u-text-1">Effetto "shake" delle piattaforme che cadono</h3>
         <p class="u-text u-text-2">Questo effetto per cui alcune piattaforme presenti nel livello 3, che dopo alcuni secondi cadono nel vuoto, avvertono il giocatore scuotendosi rapidamente, è effettuato mediante una serie di veloci traslazioni dalla posizione originale della piattaforma ad un punto scelto a caso entro un certo raggio.</p>
