@@ -83,7 +83,7 @@ applicazione tra spazi vettoriali ​che conserva le operazioni di somma tra vet
 trasformazione esprimibile come somma
 di una trasformazione lineare seguita
 da una traslazione.<br>Esempi di trasformazioni affini sono: traslazioni, rotazioni,
-riflessioni, shear.<br> Si definisce trasformazione affine in uno spazio euclideo E3&nbsp;una funzione:<br>
+riflessioni.<br> Si definisce trasformazione affine in uno spazio euclideo E3&nbsp;una funzione:<br>
         </p>
         <p class="u-align-center u-text u-text-3"><i>φ: E3&nbsp;-&gt; E3</i>
           <br><i>[x y z] -&gt; M[x y z] + t</i>
@@ -131,19 +131,21 @@ somma&nbsp;u + v.
     <section class="u-clearfix u-palette-4-light-2 u-section-5" id="sec-bc7c">
       <div class="u-clearfix u-sheet u-sheet-1">
         <h3 class="u-text u-text-1">Rotazioni</h3>
-        <p class="u-text u-text-2">NEL PIANO: La rotazione nel piano è definita da un punto O detto centro di rotazione e da un angolo ​orientato di ampiezza α. Si dice rotazione di centro O e ampiezza&nbsp;α la corrispondenza del paino in sé che ad ogni punto P del piano associa il punto P' tale che i segmenti OP e OP' abbiano la stessa lunghezza e l'angolo POP' abbia la stessa ampiezza e orientamento di&nbsp;α.<br>
-          <br>NELLO SPAZIO: La rotazione nello spazio è definita ​da un angolo di ampiezza e verso fissati α e da una retta r, che prende il nome di asse di rotazione. La rotazione di asse r e angolo α associa ad un qualunque punto P dello spazio il punto P' tale che:<br>• P' appartenga al piano ω&nbsp;perpendicolare alla retta r passante per il punto P;<br>• i segmenti OP e OP', dove O è il punto di intersezione tra la retta r e il piano ω, abbiano la stessa lunghezza;<br> • l'angolo POP' abbia la stessa ampiezza e orientamento di&nbsp;α.<br>
+        <p class="u-text u-text-2">NEL PIANO: La rotazione nel piano è definita da un punto O detto centro di rotazione e da un angolo ​orientato di ampiezza α. Si dice rotazione di centro O e ampiezza&nbsp;α la corrispondenza del piano in sé che ad ogni punto P del piano associa il punto P' tale che i segmenti OP e OP' abbiano la stessa lunghezza e l'angolo POP' abbia la stessa ampiezza e orientamento di&nbsp;α.<br>
+          <br>NELLO SPAZIO: La rotazione nello spazio è definita ​da un angolo di ampiezza e verso fissati <span style="font-weight: 400;">α</span> e da una retta r, che prende il nome di asse di rotazione. La rotazione di asse r e angolo&nbsp;α associa ad un qualunque punto P dello spazio il punto P' tale che:<br>• P' appartenga al piano ω&nbsp;perpendicolare alla retta r passante per il punto P;<br>• i segmenti OP e OP', dove O è il punto di intersezione tra la retta r e il piano ω, abbiano la stessa lunghezza;<br> • l'angolo POP' abbia la stessa ampiezza e orientamento di&nbsp;α.<br>
           <br>Nel caso in cui la rotazione avvenga attorno ad una
 retta r che non passa per l'origine, si procede nel modo seguente:<br>• Si applica una traslazione sulla retta r in modo da
-generare una retta r' che passi per l'origine;<br>• Si applica una rotazione alla retta r' in modo tale che
-l'orientazione della retta sia concorde con l'asse Y;<br>• Si applica una rotazione attorno ad&nbsp;<i>r'</i>&nbsp;utilizzando la matrice di Y;<br>• Si applica una rotazione per portare&nbsp;<i>r'</i>&nbsp;nella sua orientazione originale;<br>• Si applica una traslazione per riportare&nbsp;<i>r'</i>&nbsp;in&nbsp;<i>r</i>.<br>
+generare una retta r' che passi per l'origine;<br>• ​Si applica una rotazione dello spazio in modo da portare la retta r’ a coincidere in direzione e verso con l’asse Z;<br>• ​Si applica la&nbsp;rotazione dello spazio, relativa&nbsp;all’angolo&nbsp;α,&nbsp;attorno all’asse Z. A tal fine si usa la&nbsp;seguente&nbsp;matrice M a blocchi (con t = 0) ;<br>
+        </p>
+        <img class="u-align-center u-image u-image-default u-preserve-proportions u-image-1" src="images/matrix.png" alt="" data-image-width="180" data-image-height="100">
+        <p class="u-text u-text-3"> • Si applica una rotazione per portare&nbsp;<i>r'</i>&nbsp;nella sua posizione originale;<br>• Si applica una traslazione per riportare&nbsp;<i>r'</i>&nbsp;in&nbsp;<i>r</i>.<br>
           <br>Proprietà delle rotazioni nello spazio:<br>• Una rotazione è un'isometria diretta;<br>• L'asse di rotazione è una
 retta unita e tutti i punti che giacciono sull'asse di rotazione sono punti
 uniti;<br>• Una rotazione di 180° attorno a una retta r
 corrisponde a una simmetria assiale avente come asse di simmetria la retta r;<br>• La composizione di due rotazioni aventi stesso asse di
-rotazione è ancora una rotazione.<br>
+rotazione è ancora una rotazione.
         </p>
-        <img class="u-align-center u-image u-image-default u-image-1" src="images/rotazione-nello-spazio.png" alt="" data-image-width="610" data-image-height="440">
+        <img class="u-align-center u-image u-image-default u-image-2" src="images/rotazione-nello-spazio.png" alt="" data-image-width="610" data-image-height="440">
       </div>
     </section>
     <section class="u-clearfix u-palette-4-light-2 u-section-6" id="sec-e309">
@@ -155,15 +157,9 @@ rotazione è ancora una rotazione.<br>
     <section class="u-clearfix u-palette-4-light-2 u-section-7" id="sec-2f63">
       <div class="u-clearfix u-sheet u-sheet-1">
         <h3 class="u-text u-text-1">Omotetie</h3>
-        <p class="u-text u-text-2"> Siano fissati un punto O dello spazio ed un numero reale k diverso da 0. Si
-chiama omotetia di centro O e rapporto k ( che si indica con il simbolo s(O,k) ) la corrispondenza
-dal piano in sé, che ad ogni punto P del piano fa corrispondere il punto P' in
-modo tale che il punto P dello spazio viene spostato sulla semiretta uscente da
-O e passante per P’, in modo che la sua distanza da O cambi secondo un fattore
-costante k di valore assoluto positivo. Il centro O dell'omotetia è un punto unito di questa
-corrispondenza.<br>Si noti che, se k &gt;1
+        <p class="u-text u-text-2"> Siano fissati un punto O dello spazio ed un numero reale k diverso da 0. Si chiama omotetia di centro O e rapporto k ( che si indica con il simbolo s(O,k) )&nbsp;la corrispondenza dello spazio in sé, che ad ogni punto P dello spazio fa corrispondere il punto P' in modo il&nbsp;vettore OP’ sia k volte il vettore OP.&nbsp;<br>Il centro O dell'omotetia è l'unico punto unito di questa corrispondenza.<br>Si noti che, se |k| &gt; 1
 , allora l'omotetia "ingrandisce" le figure (dilatazione). Se,
-invece, k &lt;1,
+invece, |k| &lt; 1,
 allora l'omotetia "rende più piccole" le figure (contrazione). Per k
 = -1 l'omotetia è una simmetria centrale di centro O. Invece, se k = 1, i punti
 P e P' coincidono, dunque l'omotetia è la trasformazione identica.
@@ -174,9 +170,7 @@ P e P' coincidono, dunque l'omotetia è la trasformazione identica.
     <section class="u-clearfix u-palette-4-light-2 u-section-8" id="sec-ecfc">
       <div class="u-clearfix u-sheet u-sheet-1">
         <h3 class="u-text u-text-1">Similitudini</h3>
-        <p class="u-text u-text-2">Si chiama similitudine una corrispondenza biunivoca dal piano in sé tale che, 
-presi due punti qualunque A, B del piano e detti A', B' i loro corrispondenti, si ha che esiste un 
-numero k &gt; 0 tale che il segmento A'B' è uguale al segmento kAB.<br> Da questa definizione segue che ogni omotetia di rapporto k &gt; 0 è una 
+        <p class="u-text u-text-2"> Si chiama similitudine una affinità&nbsp;dello spazio tale che, presi due punti qualunque A, B dello spazio e detti A', B' i loro corrispondenti, esiste un numero k &gt; 0 tale che&nbsp;il vettore A'B' è uguale al vettore kAB.<br> Da questa definizione segue che ogni omotetia di rapporto k &gt; 0 è una 
 similitudine.<br>Il numero k &gt; 0 si chiama rapporto di similitudine.
 Si osservi che le similitudini di rapporto 1 non sono altro che le isometrie.
 Si può dimostrare che una similitudine è la composizione (non importa con quale ordine) 
